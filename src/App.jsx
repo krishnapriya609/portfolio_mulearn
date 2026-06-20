@@ -72,7 +72,7 @@ function App() {
 
           <div className="project-card">
             <h3>She skills</h3>
-            <p>Plaform for women to learn and teach.</p>
+            <p>Plaform for women to gainand share knowledge.</p>
           </div>
 
           <div className="project-card">
