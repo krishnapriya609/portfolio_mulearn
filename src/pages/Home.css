@@ -1,0 +1,187 @@
+.home{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.home-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hello{
+    color:#2563eb;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.home-text h1{
+    font-size:58px;
+    color:#0f172a;
+    margin-bottom:10px;
+    line-height:1.2;
+}
+
+.home-text h2{
+    color:#2563eb;
+    font-size:28px;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.description{
+    font-size:18px;
+    color:#64748b;
+    line-height:1.9;
+    margin-bottom:35px;
+    text-align:justify;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid #2563eb;
+    color:#2563eb;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.home-card{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.home-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.home-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+.info{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.info-box{
+    background:#f8fafc;
+    padding:18px;
+    border-radius:10px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+    transition:.3s;
+}
+
+.info-box:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.info-box:hover h4,
+.info-box:hover p{
+    color:white;
+}
+
+.info-box h4{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.info-box p{
+    color:#475569;
+    font-weight:500;
+}
+
+@media(max-width:992px){
+
+.home-content{
+grid-template-columns:1fr;
+}
+
+.home-text{
+text-align:center;
+}
+
+.description{
+text-align:center;
+}
+
+.buttons{
+justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.home-text h1{
+font-size:42px;
+}
+
+.home-text h2{
+font-size:22px;
+}
+
+.description{
+font-size:16px;
+}
+
+.info{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.home-text h1{
+font-size:34px;
+}
+
+.home-text h2{
+font-size:20px;
+}
+
+.btn,
+.btn-outline{
+width:100%;
+text-align:center;
+}
+
+}

@@ -1,0 +1,174 @@
+.education{
+    padding:60px 0;
+}
+
+.education-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.education-header h1{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.education-header p{
+    color:#64748b;
+    font-size:18px;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.education-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    border-left:6px solid #2563eb;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+}
+
+.year{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:18px;
+    font-weight:600;
+}
+
+.education-card h2{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.education-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.education-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+.cgpa-box{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.cgpa-box div{
+    background:#f8fafc;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+}
+
+.cgpa-box h4{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.cgpa-box p{
+    color:#0f172a;
+    font-weight:600;
+    font-size:20px;
+}
+
+.semester-section{
+    margin-top:70px;
+}
+
+.semester-section h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+.semester-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.semester-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.semester-card:hover{
+    background:#2563eb;
+    transform:translateY(-8px);
+}
+
+.semester-card:hover h3,
+.semester-card:hover p,
+.semester-card:hover span{
+    color:white;
+}
+
+.semester-card h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.semester-card p{
+    color:#64748b;
+}
+
+.semester-card span{
+    display:block;
+    margin-top:12px;
+    font-size:28px;
+    color:#2563eb;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+.education-header h1{
+    font-size:34px;
+}
+
+.cgpa-box{
+    grid-template-columns:1fr;
+}
+
+.semester-section h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:480px){
+
+.education-header h1{
+    font-size:28px;
+}
+
+.education-card{
+    padding:22px;
+}
+
+}
